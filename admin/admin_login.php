@@ -1,6 +1,6 @@
 <?php
 
-    include '../admin/config/connect.php';
+    include '../config/connect.php';
 
     session_start();
 

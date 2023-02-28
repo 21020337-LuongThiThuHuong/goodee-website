@@ -1,6 +1,6 @@
 <?php
 
-    include '../admin/config/connect.php';
+    include '../config/connect.php';
 
     session_start();
 
@@ -25,7 +25,7 @@
     </head>
     <body>
 
-    <?php include '../admin/config/admin_header.php'; ?>
+    <?php include '../config/admin_header.php'; ?>
 
     <script src="../js/admin_script.js"></script>
 </body>
