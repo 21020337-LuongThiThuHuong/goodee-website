@@ -34,11 +34,14 @@
         $image_size_03 = $_FILES['image_03']['size'];
         $image_tmp_name_03 = $_FILES['image_03']['tmp_name'];
         $image_folder_03 = '../uploaded_img/'.$image_03;
+        
+        $select_products = $conn->prepare("SELECT * FROM `products` WHERE name = ?");
+        $select_products->execute([$name]);
 
         if ($select_products->rowCount() > 0) {
             $message[] = 'product name already exists.';
         } else {
-            $insert_products = $conn->prepare("INSERT INTO `products` p (name, details, price, image_01, image_02, image_03) VALUES(?, ?, ?, ?, ?, ?)");
+            $insert_products = $conn->prepare("INSERT INTO `products` (name, details, price, image_01, image_02, image_03) VALUES(?, ?, ?, ?, ?, ?)");
             $insert_products->execute([$name, $details, $price, $image_01, $image_02, $image_03]);
 
             if ($insert_products) {
@@ -153,4 +156,6 @@
             ?>
         </div>
     </section>
+
+    <script src="../js/admin_script.js"></script>
 </body>
