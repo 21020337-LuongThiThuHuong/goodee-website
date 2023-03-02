@@ -19,7 +19,7 @@
             $_SESSION['admin_id'] = $row['id'];
             header('location:dashboard.php');
         } else {
-            $message[] = 'incorrect username or password!';
+            $message[] = 'Tên đăng nhập hoặc mật khẩu không chính xác!';
         }
     }
 
@@ -31,7 +31,7 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>login</title>
+            <title>Đăng nhập</title>
 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
             <link rel="stylesheet" href="../css/admin_style.css">
@@ -55,10 +55,10 @@
     <section class="form-container">
 
     <form action="" method="post">
-        <h3>Login</h3>
-        <input type="text" name="name" required placeholder="Enter your username" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-        <input type="password" name="pass" required placeholder="Enter your password" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-        <input type="submit" value="login now" class="btn" name="submit">
+        <h3>Đăng nhập</h3>
+        <input type="text" name="name" required placeholder="Nhập tên người dùng" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+        <input type="password" name="pass" required placeholder="Nhập mật khẩu" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+        <input type="submit" value="Đăng nhập" class="btn" name="submit">
     </form>
 
     </section>
