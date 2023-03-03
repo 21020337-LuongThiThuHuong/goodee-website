@@ -70,6 +70,30 @@
                 </div>
             </section>
         </header>
+
+        <section class="accounts">
+            <h1 class="heading">Người dùng</h1>
+            <div class="box-container">
+                <?php
+                    $select_accounts = $conn->prepare("SELECT * FROM `users`");
+                    $select_accounts->execute();
+                    if ($select_accounts->rowCount() > 0) {
+                        while ($fetch_accounts = $select_accounts->fetch(PDO::FETCH_ASSOC)) {   
+                ?>
+                <div class="box">
+                    <p> Mã người dùng : <span><?= $fetch_accounts['id']; ?></span></p>
+                    <p> Tên người dùng : <span><?= $fetch_accounts['name']; ?></span></p>
+                    <p> Email : <span><?= $fetch_accounts['email']; ?></span></p>
+                    <a href="../admin/user_account.php?delete=<?= $fetch_accounts['id']; ?>" onclick="return confirm('Xác nhận xóa người dùng?')" class="delete-btn">Xóa</a>
+                </div>
+                <?php
+                        }
+                    } else {
+                        echo '<p class="empty">Không có người dùng nào!</p>';
+                    }
+                ?>
+            </div>
+        </section>
         
         <script src="../js/admin_script.js"></script>
     </body>

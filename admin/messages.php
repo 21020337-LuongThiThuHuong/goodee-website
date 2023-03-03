@@ -9,6 +9,14 @@
     if (!isset($admin_id)) {
         header('location:admin_login.php');
     }
+
+    if (isset($_GET['delete'])) {
+        $delete_id = $_GET['delete'];
+        $delete_message = $conn->prepare("DELETE FROM `messages` WHERE id = ?");
+        $delete_message->execute([$delete_id]);
+        header('location:messages.php');
+    }
+     
 ?>
 
 <!DOCTYPE html>
@@ -70,7 +78,32 @@
                 </div>
             </section>
         </header>
-        
+        <section class="contacts">
+            <h1 class="heading">Tin nhắn</h1>
+            <div class="box-container">
+                <?php
+                    $select_messages = $conn->prepare("SELECT * FROM `messages`");
+                    $select_messages->execute();
+                    if ($select_messages->rowCount() > 0) {
+                        while ($fetch_message = $select_messages->fetch(PDO::FETCH_ASSOC)) {
+                ?>
+                <div class="box">
+                    <p> Mã người dùng : <span><?= $fetch_message['user_id']; ?></span></p>
+                    <p> Tên : <span><?= $fetch_message['name']; ?></span></p>
+                    <p> Email : <span><?= $fetch_message['email']; ?></span></p>
+                    <p> Số điện thoại : <span><?= $fetch_message['number']; ?></span></p>
+                    <p> Tin nhắn : <span><?= $fetch_message['message']; ?></span></p>
+                    <a href="../admin/messages.php??delete=<?= $fetch_message['id']; ?>" onclick="return confirm('Xóa tin nhắn này?');" class="delete-btn">Xóa</a>
+                </div>
+                <?php
+                        }
+                    } else {
+                        echo '<p class="empty">Không có tin nhắn nào</p>';
+                    }
+                ?>
+            </div>
+        </section>
+
         <script src="../js/admin_script.js"></script>
     </body>
 </html>
