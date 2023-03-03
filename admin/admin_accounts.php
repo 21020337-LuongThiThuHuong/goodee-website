@@ -9,6 +9,13 @@
     if (!isset($admin_id)) {
         header('location:admin_login.php');
     }
+
+    if (isset($_GET['delete'])) {
+        $delete_id = $_GET['delete'];
+        $delete_admin = $conn->prepare("DELETE FROM `admins` WHERE id = ?");
+        $delete_admin->execute([$delete_id]);
+        header('location:admin_accounts');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +31,18 @@
 
     </head>
     <body>
+        <?php
+            if (isset($message)) {
+                foreach ($message as $message) {
+                    echo '
+                    <div class="message">
+                        <span>'.$message.'</span>
+                        <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+                    </div>
+                    ';
+                }
+            }
+        ?>
         <header class="header">
             <section class="flex">
 
