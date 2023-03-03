@@ -58,6 +58,40 @@
                 </div>
             </section>
         </header>
+
+        <section class="accounts">
+            <h1 class="heading">Quản lý</h1>
+            <div class="box-container">
+                <div class="box">
+                    <p>Thêm người quản lý mới</p>
+                    <a href="../admin/register_admin.php" class="option-btn">Đăng ký quản lý</a>
+                </div>
+                <?php
+                    $select_account = $conn->prepare("SELECT * FROM `admins`");
+                    $select_account->execute();
+                    if ($select_account->rowCount() > 0) {
+                        while ($fetch_account = $select_account->fetch(PDO::FETCH_ASSOC)) {
+                            ?>
+                            <div class="box">
+                                <p>Mã quản lý: <span><?= $fetch_account['id']; ?></span></p>
+                                <p>Tên quản lý: <span><?= $fetch_account['name']; ?></span></p>
+                                <div class="flex-btn">
+                                    <a href="../admin/admin_accounts.php?delete=<?= $fetch_account['id']; ?>" onclick="return confirm('Xóa người quản lý này?')" class="delete-btn">Xóa</a>
+                                    <?php
+                                        if ($fetch_account['id'] == $admin_id) {
+                                            echo '<a href="../admin/update_profile.php" class="option-btn">Cập nhật</a>';
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                    } else {
+                        echo '<p class="empty">Không có người quản lý nào!</p>';
+                    }
+                ?>
+            </div>
+        </section>
         
         <script src="../js/admin_script.js"></script>
     </body>
