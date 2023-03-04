@@ -26,6 +26,18 @@
 
         </head>
     <body>
+        <?php
+            if (isset($message)) {
+                foreach ($message as $message) {
+                    echo '
+                    <div class="message">
+                        <span>'.$message.'</span>
+                        <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+                    </div>
+                    ';
+                }
+            }
+        ?>
         <header class="header">
             <section class="flex">
 
@@ -46,8 +58,8 @@
                         $total_cart_counts = $count_cart_items->rowCount();
                     ?>
                     <div id="menu-btn" class="fas fa-bars"></div>
-                        <a href="../main/search_page.php"><i class="fas fa-search"></i></a>
-                        <a href="../main/cart.php"><i class="fas fa-shopping-cart"></i><span>(<?= $total_cart_counts; ?>)</span></a>
+                    <a href="../main/search_page.php"><i class="fas fa-search"></i></a>
+                    <a href="../main/cart.php"><i class="fas fa-shopping-cart"></i><span>(<?= $total_cart_counts; ?>)</span></a>
                     <div id="user-btn" class="fas fa-user" onclick="toggleForm()"></div>
                 </div>
 
@@ -84,6 +96,41 @@
             </section>
         </header>
 
+        <footer class="footer">
+            <section class="grid">
+                <div class="box">
+                    <h3>Liên kết nhanh</h3>
+                    <a href="../main/home.php"><i class="fas fa-angle-right"></i>Trang chủ</a>
+                    <a href="../main/about.php"><i class="fas fa-angle-right"></i>Về chúng tôi</a>
+                    <a href="../main/shop.php"><i class="fas fa-angle-right"></i>Gian hàng</a>
+                    <a href="../main/contact.php"><i class="fas fa-angle-right"></i>Liên hệ</a>
+                </div>
+
+                <div class="box">
+                    <h3>Liên kết khác</h3>
+                    <a href="../main/orders.php"><i class="fas fa-angle-right"></i>Đơn hàng</a>
+                    <a href="../main/cart.php"><i class="fas fa-angle-right"></i>Giỏ hàng</a>
+                    <a href="../main/login.php"><i class="fas fa-angle-right"></i>Đăng nhập</a>
+                </div>
+
+                <div class="box">
+                    <h3>Thông tin liên hệ</h3>
+                    <a href="tel:+84 842906955"><i class="fas fa-phone"></i>0842906955</a>
+                    <a href="mailto:justhugchl@gmail.com"><i class="fas fa-envelope"></i>justhugchl@gmail.com</a>
+                    <a href="../main/login.php"><i class="fas fa-angle-right"></i>Đăng nhập</a>
+                </div>
+
+                <div class="box">
+                    <h3>Theo dõi các mạng xã hội của chúng tôi</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="#"><i class="fab fa-youtube"></i>Youtube</a>
+                    <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                </div>
+            </section>
+
+            <div class="credit"> &copy; Copyright @<?= date('Y'); ?> by <span>Team 4</span> | All rights reserved.</div>
+        </footer>
         <script src="../js/user_script.js"></script>
     </body>
 </html>
