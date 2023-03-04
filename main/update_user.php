@@ -9,7 +9,41 @@
         $user_id = '';
     }
 
-    include '../config/cart.php';
+    if(isset($_POST['submit'])){
+
+        $name = $_POST['name'];
+        $name = filter_var($name, FILTER_SANITIZE_STRING);
+        $email = $_POST['email'];
+        $email = filter_var($email, FILTER_SANITIZE_STRING);
+        
+        $update_profile = $conn->prepare("UPDATE `users` SET name = ?, email = ? WHERE id = ?");
+        $update_profile->execute([$name, $email, $user_id]);
+        
+        $empty_pass = 'da39a3ee5e6b4b0d3255bfef95601890afd80709';
+        $prev_pass = $_POST['prev_pass'];
+        $opass = sha1($_POST['opass']);
+        $opass = filter_var($opass, FILTER_SANITIZE_STRING);
+        $npass = sha1($_POST['npass']);
+        $npass = filter_var($npass, FILTER_SANITIZE_STRING);
+        $cpass = sha1($_POST['cpass']);
+        $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
+        
+        if ($opass == $empty_pass) {
+            $message[] = 'Hãy nhập mật khẩu cũ!';
+        } elseif ($opass != $prev_pass) {
+            $message[] = 'Mật khẩu cũ không chính xác!';
+        } elseif ($npass != $cpass) {
+            $message[] = 'Mật khẩu xác nhận không trùng khớp.';
+        } else {
+            if ($npass != $empty_pass) {
+                $update_admin_pass = $conn->prepare("UPDATE `users` SET password = ? WHERE id = ?");
+                $update_admin_pass->execute([$cpass, $user_id]);
+                $message[] = 'Cập nhật mật khẩu thành công.';
+            } else {
+                $message[] = 'Hãy nhập mật khẩu mới!';
+            }
+        }
+    }
     
 ?>
 
@@ -97,7 +131,19 @@
             </section>
         </header>
         <!-- end of header -->
-
+        
+        <section class="form-container">
+            <form action="" method="post">
+                <h3>Cập nhật hồ sơ</h3>
+                <input type="hidden" name="prev_pass" value="<?= $fetch_profile["password"]; ?>">
+                <input type="text" name="name" required placeholder="Nhập tên người dùng" maxlength="20"  class="box" value="<?= $fetch_profile["name"]; ?>">
+                <input type="email" name="email" required placeholder="Nhập email" maxlength="50"  class="box" oninput="this.value = this.value.replace(/\s/g, '')" value="<?= $fetch_profile["email"]; ?>">
+                <input type="password" name="opass" placeholder="Nhập mật khẩu cũ" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+                <input type="password" name="npass" placeholder="Nhập mật khẩu mới" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+                <input type="password" name="cpass" placeholder="Xác nhận mật khẩu mới" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+                <input type="submit" value="Cập nhật hồ sơ" class="btn" name="submit">
+            </form>
+        </section>
         
         <!-- footer of page -->
         <footer class="footer">
@@ -121,7 +167,6 @@
                     <h3>Thông tin liên hệ</h3>
                     <a href="tel:+84 842906955"><i class="fas fa-phone"></i>0842906955</a>
                     <a href="mailto:justhugchl@gmail.com"><i class="fas fa-envelope"></i>justhugchl@gmail.com</a>
-                    <a href="../main/login.php"><i class="fas fa-angle-right"></i>Đăng nhập</a>
                 </div>
 
                 <div class="box">
