@@ -9,7 +9,34 @@
         $user_id = '';
     }
 
-    include '../config/cart.php';
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $name = filter_var($name, FILTER_SANITIZE_STRING);
+        $email = $_POST['email'];
+        $email = filter_var($email, FILTER_SANITIZE_STRING);
+        $pass = sha1($_POST['pass']);
+        $pass = filter_var($pass, FILTER_SANITIZE_STRING);
+        $cpass = sha1($_POST['cpass']);
+        $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
+        
+        $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ?");
+        $select_user->execute([$email]);
+        $row = $select_user->fetch(PDO::FETCH_ASSOC);
+
+        if ($select_user->rowCount() > 0) {
+            $message[] = 'Email này đã được sử dụng.';
+        } else {
+            if ($pass != $cpass) {
+                $message[] = 'Mật khẩu xác nhận không chính xác';
+            } else {
+                $new_user = $conn->prepare("INSERT INTO `users` (name, email, password) VALUES (?, ?, ?);");
+                $new_user->execute([$name, $email, $pass]);
+                $message[] = 'Đăng ký thành công!';
+                header('location:user_login.php');
+            }
+            
+        }
+    }
     
 ?>
 
@@ -97,7 +124,19 @@
             </section>
         </header>
         <!-- end of header -->
-
+        
+        <section class="form-container">
+            <form action="" method="POST">
+                <h3>Đăng ký</h3>
+                <input type="text" required maxlength="20" name="name" placeholder="Nhập tên người dùng" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+                <input type="email" required maxlength="50" name="email" placeholder="Nhập email" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+                <input type="password" required maxlength="50" name="pass" placeholder="Nhập mật khẩu" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+                <input type="password" required maxlength="50" name="cpass" placeholder="Xác nhận mật khẩu" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+                <input type="submit" value="Đăng ký" class="btn" name="submit">
+                <p>Đã có tài khoản?</p>
+                <a href="../main/user_login.php" class="option-btn">Đăng nhập ngay</a>
+            </form>
+        </section>
         
         <!-- footer of page -->
         <footer class="footer">
