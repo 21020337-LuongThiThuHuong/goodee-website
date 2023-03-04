@@ -61,7 +61,7 @@
         <header class="header">
             <section class="flex">
 
-                <a href="../admin/dashboard.php" class="logo">Good<span>ee.</span></a>
+                <a href="../main/home.php" class="logo">Good<span>ee.</span></a>
 
                 <nav class="navbar">
                     <a href="../main/home.php">Trang chủ</a>
