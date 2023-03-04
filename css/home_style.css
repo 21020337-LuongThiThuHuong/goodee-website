@@ -232,6 +232,39 @@ section{
     display: none;
 }
 
+.form-container form{
+    max-width: 50rem;
+    margin: 0 auto;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.form-container form h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.form-container form p{
+    font-size: 2rem;
+    color: var(--light-color);
+    margin: 1.5rem 0;
+}
+
+.form-container form .box{
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    color: var(--black);
+    padding: 1.4rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+}
+
 .footer{
     background-color: var(--white);
     /* padding-bottom: 7rem; */

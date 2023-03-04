@@ -26,6 +26,7 @@
 
         </head>
     <body>
+        <!-- header of page -->
         <?php
             if (isset($message)) {
                 foreach ($message as $message) {
@@ -95,7 +96,11 @@
                 </div>
             </section>
         </header>
+        <!-- end of header -->
+        
 
+
+        <!-- footer of page -->
         <footer class="footer">
             <section class="grid">
                 <div class="box">
@@ -131,6 +136,7 @@
 
             <div class="credit"> &copy; Copyright @<?= date('Y'); ?> by <span>Team 4</span> | All rights reserved.</div>
         </footer>
+        <!-- end of footer -->
         <script src="../js/user_script.js"></script>
     </body>
 </html>
