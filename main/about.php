@@ -22,6 +22,7 @@
             <title>Về chúng tôi</title>
 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+            <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
             <link rel="stylesheet" href="../css/home_style.css">
 
         </head>
@@ -117,13 +118,13 @@
         <!-- review -->
         <section class="reviews">
    
-            <h1 class="heading">Chia sẻ của khách hàng</h1>
+            <h1 class="heading">Reviews</h1>
             <div class="swiper reviews-slider">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide slide">
                         <img src="../images/pic-1.png" alt="">
-                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <h3>Phi Hùng</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -131,12 +132,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <h3>Phi Hùng</h3>
+                        <p>"Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa."</p>
                     </div>
 
                     <div class="swiper-slide slide">
                         <img src="../images/pic-2.png" alt="">
-                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <h3>Phi Hùng</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -144,12 +145,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <h3>Phi Hùng</h3>
+                        <p>"Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa."</p>
                     </div>
 
                     <div class="swiper-slide slide">
                         <img src="../images/pic-3.png" alt="">
-                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <h3>Phi Hùng</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -157,12 +158,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <h3>Phi Hùng</h3>
+                        <p>"Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa."</p>
                     </div>
 
                     <div class="swiper-slide slide">
                         <img src="../images/pic-4.png" alt="">
-                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <h3>Phi Hùng</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -170,12 +171,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <h3>Phi Hùng</h3>
+                        <p>"Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa."</p>
                     </div>
 
                     <div class="swiper-slide slide">
                         <img src="../images/pic-5.png" alt="">
-                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <h3>Phi Hùng</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -183,12 +184,12 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <h3>Phi Hùng</h3>
+                        <p>"Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa."</p>
                     </div>
 
                     <div class="swiper-slide slide">
                         <img src="../images/pic-6.png" alt="">
-                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <h3>Phi Hùng</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -196,7 +197,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <h3>Phi Hùng</h3>
+                        <p>"Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa."</p>
                     </div>
 
                 </div>
@@ -244,6 +245,31 @@
             <div class="credit"> &copy; Copyright @<?= date('Y'); ?> by <span>Team 4</span> | All rights reserved.</div>
         </footer>
         <!-- end of footer -->
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
         <script src="../js/user_script.js"></script>
+
+        <script>
+            var swiper = new Swiper(".reviews-slider", {
+                loop:true,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable:true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView:1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    991: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        </script>
     </body>
 </html>
