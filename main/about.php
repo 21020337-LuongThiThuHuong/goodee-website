@@ -98,6 +98,111 @@
         </header>
         <!-- end of header -->
 
+        <!-- story -->
+
+        <section class="about">
+            <div class="row">
+                <div class="image">
+                    <img src="../images/about-img.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>Câu chuyện về Goodee.</a></h3>
+                    <p> Goodee sinh ra với mong muốn trở thành điển hình về mô hình doanh nghiệp trách nhiệm bằng cách vừa làm kinh doanh bài bản, có lợi nhuận và đồng thời mang lại những giá trị thiết thực và lâu dài cho người dùng và xã hội.</p>
+                    <a href="../main/contact.php" class="btn">Liên hệ với chúng tôi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- review -->
+        <section class="reviews">
+   
+            <h1 class="heading">Chia sẻ của khách hàng</h1>
+            <div class="swiper reviews-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide">
+                        <img src="../images/pic-1.png" alt="">
+                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Phi Hùng</h3>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <img src="../images/pic-2.png" alt="">
+                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Phi Hùng</h3>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <img src="../images/pic-3.png" alt="">
+                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Phi Hùng</h3>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <img src="../images/pic-4.png" alt="">
+                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Phi Hùng</h3>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <img src="../images/pic-5.png" alt="">
+                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Phi Hùng</h3>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <img src="../images/pic-6.png" alt="">
+                        <p>Mua giày tại Goodee. luôn đem lại cho mình cảm giác an tâm về chất lượng và hài lòng về mức giá. Mình đã từng mua giày ở rất nhiều cửa hàng nhưng từ khi tới Goodee. là mình không còn muốn mua giày ở bất kỳ đâu khác nữa.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3>Phi Hùng</h3>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
         
         <!-- footer of page -->
         <footer class="footer">
@@ -131,6 +236,10 @@
                     <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
                 </div>
             </section>
+
+            <!-- review -->
+
+            
 
             <div class="credit"> &copy; Copyright @<?= date('Y'); ?> by <span>Team 4</span> | All rights reserved.</div>
         </footer>
