@@ -10,7 +10,28 @@
     }
 
     include '../config/cart.php';
-    
+
+    if (isset($_POST['send'])) {
+        $name = $_POST['name'];
+        $name = filter_var($name, FILTER_SANITIZE_STRING);
+        $email = $_POST['email'];
+        $email = filter_var($email, FILTER_SANITIZE_STRING);
+        $number = $_POST['number'];
+        $number = filter_var($number, FILTER_SANITIZE_STRING);
+        $msg = $_POST['msg'];
+        $msg = filter_var($msg, FILTER_SANITIZE_STRING);
+        
+        $select_message = $conn->prepare("SELECT * FROM `messages` WHERE name = ? AND email = ? AND number = ? AND message = ?");
+        $select_message->execute([$name, $email, $number, $msg]);
+        
+        if ($select_message->rowCount() > 0) {
+            $message[] = 'Đã gửi lời nhắn rùi mà!';
+        } else {
+            $insert_message = $conn->prepare("INSERT INTO `messages`(user_id, name, email, number, message) VALUES(?,?,?,?,?)");
+            $insert_message->execute([$user_id, $name, $email, $number, $msg]);
+            $message[] = 'Gửi thành công!';
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -97,7 +118,17 @@
             </section>
         </header>
         <!-- end of header -->
-
+        
+        <section class="contact">
+            <form action="" method="post">
+                <h3>Để lại lời nhắn cho chúng tôi</h3>
+                <input type="text" name="name" placeholder="Nhập tên của bạn" required maxlength="20" class="box">
+                <input type="email" name="email" placeholder="Nhập email của bạn" required maxlength="50" class="box">
+                <input type="number" name="number" min="0" max="9999999999" placeholder="Nhập số điện thoại của bạn" required onkeypress="if(this.value.length == 10) return false;" class="box">
+                <textarea name="msg" class="box" placeholder="Để lại lời nhắn..." cols="30" rows="10"></textarea>
+                <input type="submit" value="Gửi" name="send" class="btn">
+            </form>
+        </section>
         
         <!-- footer of page -->
         <footer class="footer">
@@ -120,7 +151,7 @@
                 <div class="box">
                     <h3>Thông tin liên hệ</h3>
                     <a href="tel:+84 842906955"><i class="fas fa-phone"></i>0842906955</a>
-                    <a href="mailto:justhugchl@gmail.com"><i class="fas fa-envelope"></i>justhugchl@gmail.com</a>
+                    <a href="mailto:goodeeteam@gmail.com"><i class="fas fa-envelope"></i>goodeeteam@gmail.com</a>
                 </div>
 
                 <div class="box">

@@ -166,7 +166,7 @@
                 <div class="box">
                     <h3>Thông tin liên hệ</h3>
                     <a href="tel:+84 842906955"><i class="fas fa-phone"></i>0842906955</a>
-                    <a href="mailto:justhugchl@gmail.com"><i class="fas fa-envelope"></i>justhugchl@gmail.com</a>
+                    <a href="mailto:goodeeteam@gmail.com"><i class="fas fa-envelope"></i>goodeeteam@gmail.com</a>
                 </div>
 
                 <div class="box">
