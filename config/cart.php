@@ -3,7 +3,7 @@
     if (isset($_POST['add_to_cart'])) {
 
         if ($user_id == '') {
-            header('location:user_login.php');
+            header('location:../main/user_login.php');
         } else {
             $pid = $_POST['pid'];
             $pid = filter_var($pid, FILTER_SANITIZE_STRING);
@@ -20,11 +20,11 @@
             $check_cart_numbers->execute([$name, $user_id]);
 
             if ($check_cart_numbers->rowCount() > 0) {
-                $message[] = 'already added to cart!';
+                $message[] = 'Sản phẩm đã có trong giỏ hàng rồi!';
             } else {
                 $insert_cart = $conn->prepare("INSERT INTO `cart`(user_id, pid, name, price, quantity, image) VALUES(?,?,?,?,?,?)");
                 $insert_cart->execute([$user_id, $pid, $name, $price, $qty, $image]);
-                $message[] = 'added to cart!';
+                $message[] = 'Thêm vào giỏ hàng thành công!';
             }
         }
     }

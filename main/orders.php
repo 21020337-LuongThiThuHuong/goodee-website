@@ -97,7 +97,39 @@
             </section>
         </header>
         <!-- end of header -->
-
+        
+        <section class="orders">
+            <h1 class="heading">Đơn hàng đã đặt</h1>
+            <div class="box-container">
+                <?php
+                    if ($user_id == '') {
+                        echo '<p class="empty">Hãy đăng nhập trước nhé!</p>';
+                    } else {
+                        $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = ?");
+                        $select_orders->execute([$user_id]);
+                        if ($select_orders->rowCount() > 0) {
+                            while ($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)) {
+                                ?>
+                                <div class="box">
+                                    <p>placed on : <span><?= $fetch_orders['placed_on']; ?></span></p>
+                                    <p>Tên : <span><?= $fetch_orders['name']; ?></span></p>
+                                    <p>Email : <span><?= $fetch_orders['email']; ?></span></p>
+                                    <p>Số điện thoại : <span><?= $fetch_orders['number']; ?></span></p>
+                                    <p>Địa chỉ : <span><?= $fetch_orders['address']; ?></span></p>
+                                    <p>Phương thức thanh toán : <span><?= $fetch_orders['method']; ?></span></p>
+                                    <p>Đơn hàng của bạn : <span><?= $fetch_orders['total_products']; ?></span></p>
+                                    <p>Tổng tiền : <span>$<?= $fetch_orders['total_price']; ?>/-</span></p>
+                                    <p>Trạng thái thanh toán : <span style="color:<?php if($fetch_orders['payment_status'] == 'pending'){ echo 'red'; }else{ echo 'green'; }; ?>"><?= $fetch_orders['payment_status']; ?></span> </p>
+                                </div>
+                                <?php
+                            }
+                        } else {
+                            echo '<p class="empty">Chưa có đơn hàng nào được đặt!</p>';
+                        }
+                    }
+                ?>
+            </div>
+        </section>
         
         <!-- footer of page -->
         <footer class="footer">
