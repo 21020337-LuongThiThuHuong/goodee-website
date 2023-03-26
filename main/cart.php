@@ -132,14 +132,14 @@
                             <form action="" method="post" class="box">
                                 <input type="hidden" name="cart_id" value="<?= $fetch_cart['id']; ?>">
                                 <a href="quick_view.php?pid=<?= $fetch_cart['pid']; ?>" class="fas fa-eye"></a>
-                                <img src="uploaded_img/<?= $fetch_cart['image']; ?>" alt="">
+                                <img src="../uploaded_img/<?= $fetch_cart['image']; ?>" alt="">
                                 <div class="name"><?= $fetch_cart['name']; ?></div>
                                 <div class="flex">
-                                    <div class="price">VND <?= $fetch_cart['price']; ?>/-</div>
+                                    <div class="price">VND <?= $fetch_cart['price']; ?></div>
                                     <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="<?= $fetch_cart['quantity']; ?>">
                                     <button type="submit" class="fas fa-edit" name="update_qty"></button>
                                 </div>
-                                <div class="sub-total"> Giá tiền: <span>VND <?= $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-</span> </div>
+                                <div class="sub-total"> Giá tiền: <span>VND <?= $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?></span> </div>
                                 <input type="submit" value="Xóa" onclick="return confirm('Xóa sản phẩm này?');" class="delete-btn" name="delete">
                             </form>
                             <?php
@@ -152,7 +152,7 @@
             </div>
 
             <div class="cart-total">
-                <p>Tổng giá trị : <span>VND <?= $grand_total; ?>/-</span></p>
+                <p>Tổng giá trị đơn hàng : <span>VND <?= $grand_total; ?></span></p>
                 <a href="shop.php" class="option-btn">Tiếp tục mua sắm</a>
                 <a href="cart.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('Xóa tất cả sản phẩm?');">Xóa tất cả sản phẩm</a>
                 <a href="checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Thanh toán</a>

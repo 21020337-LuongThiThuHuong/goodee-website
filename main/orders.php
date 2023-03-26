@@ -111,7 +111,7 @@
                             while ($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)) {
                                 ?>
                                 <div class="box">
-                                    <p>placed on : <span><?= $fetch_orders['placed_on']; ?></span></p>
+                                    <p>Đặt tại : <span><?= $fetch_orders['placed_on']; ?></span></p>
                                     <p>Tên : <span><?= $fetch_orders['name']; ?></span></p>
                                     <p>Email : <span><?= $fetch_orders['email']; ?></span></p>
                                     <p>Số điện thoại : <span><?= $fetch_orders['number']; ?></span></p>
