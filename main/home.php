@@ -98,7 +98,62 @@
         </header>
         <!-- end of header -->
         
+        <!-- hero slide -->
+        <section>
+            <div class="hero">
+                <div class="swiper hero_swiper">
+                    <!-- slide item -->
+                    <div class="swiper-slide">
+                        <div class="hero__bg bg-image" style="background-image: url(../images/lennart-uecker-49bZDF_EgJU-unsplash.jpg);"></div>
+                        <div class="container">
+                            <div class="hero__content">
+                                <div class="hero__txt">
+                                    <h2>Niek Air Max</h2>
+                                    <p>Nhu cc</p>
+                                </div>
+                                <div class="hero__img">
+                                    <img src="../images/Nike-Shoes-Air-Max-PNG-Image.png" alt="product image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide item -->
+                    <div class="swiper-slide">
+                        <div class="hero__bg bg-image" style="background-image: url(../images/lennart-uecker-49bZDF_EgJU-unsplash.jpg);"></div>
+                        <div class="container">
+                            <div class="hero__content">
+                                <div class="hero__txt">
+                                    <h2>Niek Jordan</h2>
+                                    <p>Nhu cc thatay chu</p>
+                                </div>
+                                <div class="hero__img">
+                                    <img src="../images/Nike-Shoes-Jordan-PNG-Pic.png" alt="product image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div> 
+        </section>
+        <!-- hero slide -->
 
+        <!-- top product -->
+        <section>
+            <div class="container">
+                <div class="top-product__header">
+                    <h2 class="section__title no-margin">Top pick</h2>
+                    <div class="top-product__swiper__btn" id="top-product__swiper__btn">
+                        <div class="swiper-button btn-prev">
+                            <i class="bx bx-chevron-left"></i>
+                        </div>
+                        <div class="swiper-button btn-next">
+                            <i class="bx bx-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- footer of page -->
         <footer class="footer">
