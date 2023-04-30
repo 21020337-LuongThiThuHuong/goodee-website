@@ -23,6 +23,8 @@
 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
             <link rel="stylesheet" href="../css/home_style.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         </head>
     <body>
@@ -152,6 +154,116 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper top-product__swiper">
+                    <div class="swiper-wrapper">
+                        <!-- slide item -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product__image">
+                                    <img src="../images/Nike-Shoes-PNG-Photos.png" alt="product image">
+                                </div>
+                                <div class="product__info">
+                                    <h5 class="product__name">Nike Air</h5>
+                                    <span class="product__price"> 1.234.000 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide item -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product__image">
+                                    <img src="../images/Nike-Shoes.png" alt="product image">
+                                </div>
+                                <div class="product__info">
+                                    <h5 class="product__name">Nike Air</h5>
+                                    <span class="product__price"> 1.234.000 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide item -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product__image">
+                                    <img src="../images/Nike-Shoes-PNG-Images-HD.png" alt="product image">
+                                </div>
+                                <div class="product__info">
+                                    <h5 class="product__name">Nike Air</h5>
+                                    <span class="product__price"> 1.234.000 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide item -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product__image">
+                                    <img src="../images/Nike-Shoes-PNG-File.png" alt="product image">
+                                </div>
+                                <div class="product__info">
+                                    <h5 class="product__name">Nike Air</h5>
+                                    <span class="product__price"> 1.234.000 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide item -->
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product__image">
+                                    <img src="../images/Nike-Shoes-PNG-Image.png" alt="product image">
+                                </div>
+                                <div class="product__info">
+                                    <h5 class="product__name">Nike Air</h5>
+                                    <span class="product__price"> 1.234.000 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- category banner -->
+        <section>
+            <div class="container">
+                <h2 class="section__title">Trending now</h2>
+                <div class="category__grid">
+                    <!-- item -->
+                    <div class="category__item category__top">
+                        <div class="category__banner bg-image" style="background-image: url(../images/taylor-smith-aDZ5YIuedQg-unsplash.jpg);"></div>
+                        <div class="category__overlay"></div>
+                        <div class="category__border"></div>
+                        <div class="category__txt">Nike Jordan</div>
+                    </div>
+                    <!-- item -->
+                    <div class="category__item category__left">
+                        <div class="category__banner bg-image" style="background-image: url(../images/eugene-chystiakov-b2uYNpBG7Ho-unsplash.jpg);"></div>
+                        <div class="category__overlay"></div>
+                        <div class="category__border"></div>
+                        <div class="category__txt">Nike Jordan</div>
+                    </div>
+                    <!-- item -->
+                    <div class="category__item category__right">
+                        <div class="category__banner bg-image" style="background-image: url(../images/jake-weirick-pu-PgXMI30I-unsplash.jpgg);"></div>
+                        <div class="category__overlay"></div>
+                        <div class="category__border"></div>
+                        <div class="category__txt">Nike Jordan</div>
+                    </div>
+                </div>
+            </div>
+        </section>                   
+        
+        <!-- promotion product -->
+        <section>
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__txt">
+                        <h2>Nike Foam</h2>
+                        <p>hello it's me</p>
+                        <button class="btn-home">Go to Collecttion</button>
+                    </div>
+                    <div class="hero__img">
+                        <img src="../images/Nike-Shoes-PNG-File.png" alt="product image">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -191,6 +303,8 @@
             <div class="credit"> &copy; Copyright @<?= date('Y'); ?> by <span>Team 4</span> | All rights reserved.</div>
         </footer>
         <!-- end of footer -->
+
         <script src="../js/user_script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     </body>
 </html>
