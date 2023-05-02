@@ -21,6 +21,9 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Goodee.</title>
 
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
             <link rel="stylesheet" href="../css/home_style.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -101,35 +104,55 @@
         <!-- end of header -->
         
         <!-- hero slide -->
-        <section>
+        <div class="section-home">
             <div class="hero">
-                <div class="swiper hero_swiper">
-                    <!-- slide item -->
-                    <div class="swiper-slide">
-                        <div class="hero__bg bg-image" style="background-image: url(../images/lennart-uecker-49bZDF_EgJU-unsplash.jpg);"></div>
-                        <div class="container">
-                            <div class="hero__content">
-                                <div class="hero__txt">
-                                    <h2>Niek Air Max</h2>
-                                    <p>Nhu cc</p>
-                                </div>
-                                <div class="hero__img">
-                                    <img src="../images/Nike-Shoes-Air-Max-PNG-Image.png" alt="product image">
+                <div class="swiper hero__swiper">
+                    <div class="swiper-wrapper">
+                        <!-- slide item -->
+                        <div class="swiper-slide">
+                            <div class="hero__bg bg-image" style="background-image: url(../images/dulcey-lima-8Tx1FOj8xJc-unsplash.jpg);"></div>
+                            <div class="container">
+                                <div class="hero__content">
+                                    <div class="hero__txt">
+                                        <h2 class="hero-title">Nike Jordan</h2>
+                                        <p class="hero-txt">Air Jordan is a line of basketball shoes and athletic apparel produced by American corporation Nike, Inc. The first Air Jordan shoe was produced for Hall of Fame former basketball player Michael Jordan during his time with the Chicago Bulls in late 1984 and released to the public on April 1, 1985.</p>
+                                        <button class="btn-home">Mua ngay</button>
+                                    </div>
+                                    <div class="hero__img">
+                                        <img src="../images/Nike-Shoes-Jordan-PNG-Pic.png" alt="product image">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- slide item -->
-                    <div class="swiper-slide">
-                        <div class="hero__bg bg-image" style="background-image: url(../images/lennart-uecker-49bZDF_EgJU-unsplash.jpg);"></div>
-                        <div class="container">
-                            <div class="hero__content">
-                                <div class="hero__txt">
-                                    <h2>Niek Jordan</h2>
-                                    <p>Nhu cc thatay chu</p>
+                        <!-- slide item -->
+                        <div class="swiper-slide">
+                            <div class="hero__bg bg-image" style="background-image: url(../images/lennart-uecker-49bZDF_EgJU-unsplash.jpg);"></div>
+                            <div class="container">
+                                <div class="hero__content">
+                                    <div class="hero__txt">
+                                        <h2 class="hero-title">Nike Air Max</h2>
+                                        <p class="hero-txt">Nike Air Max is a line of shoes produced by Nike, Inc., with the first model released in 1987. Air Max shoes are identified by their midsoles incorporating flexible urethane pouches filled with pressurized gas, visible from the exterior of the shoe and intended to provide cushioning to the underfoot. Air Max was conceptualized by Tinker Hatfield, who initially worked for Nike designing stores.</p>
+                                        <button class="btn-home">Mua ngay</button>
+                                    </div>
+                                    <div class="hero__img">
+                                        <img src="../images/Nike-Shoes-Air-Max-PNG-Image.png" alt="product image">
+                                    </div>
                                 </div>
-                                <div class="hero__img">
-                                    <img src="../images/Nike-Shoes-Jordan-PNG-Pic.png" alt="product image">
+                            </div>
+                        </div>
+                        <!-- slide item -->
+                        <div class="swiper-slide">
+                            <div class="hero__bg bg-image" style="background-image: url(../images/sherise-van-dyk-nS3HSEBrcik-unsplash.jpg);"></div>
+                            <div class="container">
+                                <div class="hero__content">
+                                    <div class="hero__txt">
+                                        <h2 class="hero-title">Nike Jordan</h2>
+                                        <p class="hero-txt">Air Jordan is a line of basketball shoes and athletic apparel produced by American corporation Nike, Inc. The first Air Jordan shoe was produced for Hall of Fame former basketball player Michael Jordan during his time with the Chicago Bulls in late 1984 and released to the public on April 1, 1985.</p>
+                                        <button class="btn-home">Mua ngay</button>
+                                    </div>
+                                    <div class="hero__img">
+                                        <img src="../images/Nike-Shoes-PNG-Photos.png" alt="product image">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -137,14 +160,14 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div> 
-        </section>
+        </div>
         <!-- hero slide -->
 
         <!-- top product -->
-        <section>
+        <div class="section-home">
             <div class="container">
                 <div class="top-product__header">
-                    <h2 class="section__title no-margin">Top pick</h2>
+                    <h2 class="section__title no-margin">Lựa chọn hàng đầu</h2>
                     <div class="top-product__swiper__btn" id="top-product__swiper__btn">
                         <div class="swiper-button btn-prev">
                             <i class="bx bx-chevron-left"></i>
@@ -164,7 +187,7 @@
                                 </div>
                                 <div class="product__info">
                                     <h5 class="product__name">Nike Air</h5>
-                                    <span class="product__price"> 1.234.000 </span>
+                                    <span class="product__price"> 1.234.000 VND</span>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +199,7 @@
                                 </div>
                                 <div class="product__info">
                                     <h5 class="product__name">Nike Air</h5>
-                                    <span class="product__price"> 1.234.000 </span>
+                                    <span class="product__price"> 1.234.000 VND</span>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +211,7 @@
                                 </div>
                                 <div class="product__info">
                                     <h5 class="product__name">Nike Air</h5>
-                                    <span class="product__price"> 1.234.000 </span>
+                                    <span class="product__price"> 1.234.000 VND</span>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +223,7 @@
                                 </div>
                                 <div class="product__info">
                                     <h5 class="product__name">Nike Air</h5>
-                                    <span class="product__price"> 1.234.000 </span>
+                                    <span class="product__price"> 1.234.000 VND</span>
                                 </div>
                             </div>
                         </div>
@@ -212,19 +235,19 @@
                                 </div>
                                 <div class="product__info">
                                     <h5 class="product__name">Nike Air</h5>
-                                    <span class="product__price"> 1.234.000 </span>
+                                    <span class="product__price"> 1.234.000 VND</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- category banner -->
-        <section>
+        <div class="section-home">
             <div class="container">
-                <h2 class="section__title">Trending now</h2>
+                <h2 class="section__title">Đang thịnh hành</h2>
                 <div class="category__grid">
                     <!-- item -->
                     <div class="category__item category__top">
@@ -242,22 +265,22 @@
                     </div>
                     <!-- item -->
                     <div class="category__item category__right">
-                        <div class="category__banner bg-image" style="background-image: url(../images/jake-weirick-pu-PgXMI30I-unsplash.jpgg);"></div>
+                        <div class="category__banner bg-image" style="background-image: url(../images/jake-weirick-pu-PgXMI30I-unsplash.jpg);"></div>
                         <div class="category__overlay"></div>
                         <div class="category__border"></div>
                         <div class="category__txt">Nike Jordan</div>
                     </div>
                 </div>
             </div>
-        </section>                   
-        
+        </div>                   
+
         <!-- promotion product -->
-        <section>
+        <div class="section-home">
             <div class="container">
                 <div class="hero__content">
                     <div class="hero__txt">
-                        <h2>Nike Foam</h2>
-                        <p>hello it's me</p>
+                        <h2 class="hero-title">Nike Foam</h2>
+                        <p class="hero-txt txt-promo">When the Nike Foamposite One first dropped in 1997, it was like nothing anyone had ever seen before, but people wore it in some impressive performances. The sleek $180 shoe had no Nike branding on the upper, save a small Swoosh near the toe. Its synthetic upper and prominent carbon plate gave the shoe a decidedly futuristic look—one that many sneaker designers still strive to achieve.</p>
                         <button class="btn-home">Go to Collecttion</button>
                     </div>
                     <div class="hero__img">
@@ -265,7 +288,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- footer of page -->
         <footer class="footer">
@@ -304,7 +327,9 @@
         </footer>
         <!-- end of footer -->
 
-        <script src="../js/user_script.js"></script>
+        <!-- swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- swiper -->
+        <script src="../js/user_script.js"></script>
     </body>
 </html>
