@@ -53,6 +53,7 @@ a:hover {
     border: none;
     outline: none;
     padding: 1rem 2.5rem;
+    font-size: 1.7rem;
     border-radius: .5rem;
     text-transform: capitalize;
     background-color: var(--main-color);
@@ -112,8 +113,8 @@ section{
     margin-bottom: 2rem;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 4rem;
-    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-family: "Nunito", sans-serif;
 }
 
 .txt-promo {

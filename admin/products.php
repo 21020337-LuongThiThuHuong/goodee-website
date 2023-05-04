@@ -188,7 +188,7 @@
                                 <div class="price">VND <span><?= $fetch_products['price']; ?></span></div>
                                 <div class="details"><span><?= $fetch_products['details']; ?></span></div>
                                 <div class="flex-btn">
-                                    <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">Cập nhật</a>
+                                    <a href="update_products.php?update=<?= $fetch_products['id']; ?>" class="option-btn">Cập nhật</a>
                                     <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('Xóa sản phẩm?');">Xóa</a>
                                 </div>
                             </div>

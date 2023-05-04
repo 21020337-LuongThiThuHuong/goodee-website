@@ -116,7 +116,7 @@
                                     <div class="hero__txt">
                                         <h2 class="hero-title">Nike Jordan</h2>
                                         <p class="hero-txt">Air Jordan is a line of basketball shoes and athletic apparel produced by American corporation Nike, Inc. The first Air Jordan shoe was produced for Hall of Fame former basketball player Michael Jordan during his time with the Chicago Bulls in late 1984 and released to the public on April 1, 1985.</p>
-                                        <button class="btn-home">Mua ngay</button>
+                                        <a href="../main/shop.php" class="btn-home">Mua ngay</a>
                                     </div>
                                     <div class="hero__img">
                                         <img src="../images/Nike-Shoes-Jordan-PNG-Pic.png" alt="product image">
@@ -132,7 +132,7 @@
                                     <div class="hero__txt">
                                         <h2 class="hero-title">Nike Air Max</h2>
                                         <p class="hero-txt">Nike Air Max is a line of shoes produced by Nike, Inc., with the first model released in 1987. Air Max shoes are identified by their midsoles incorporating flexible urethane pouches filled with pressurized gas, visible from the exterior of the shoe and intended to provide cushioning to the underfoot. Air Max was conceptualized by Tinker Hatfield, who initially worked for Nike designing stores.</p>
-                                        <button class="btn-home">Mua ngay</button>
+                                        <a href="../main/shop.php" class="btn-home">Mua ngay</a>
                                     </div>
                                     <div class="hero__img">
                                         <img src="../images/Nike-Shoes-Air-Max-PNG-Image.png" alt="product image">
@@ -148,7 +148,7 @@
                                     <div class="hero__txt">
                                         <h2 class="hero-title">Nike Jordan</h2>
                                         <p class="hero-txt">Air Jordan is a line of basketball shoes and athletic apparel produced by American corporation Nike, Inc. The first Air Jordan shoe was produced for Hall of Fame former basketball player Michael Jordan during his time with the Chicago Bulls in late 1984 and released to the public on April 1, 1985.</p>
-                                        <button class="btn-home">Mua ngay</button>
+                                        <a href="../main/shop.php" class="btn-home">Mua ngay</a>
                                     </div>
                                     <div class="hero__img">
                                         <img src="../images/Nike-Shoes-PNG-Photos.png" alt="product image">
@@ -281,7 +281,7 @@
                     <div class="hero__txt">
                         <h2 class="hero-title">Nike Foam</h2>
                         <p class="hero-txt txt-promo">When the Nike Foamposite One first dropped in 1997, it was like nothing anyone had ever seen before, but people wore it in some impressive performances. The sleek $180 shoe had no Nike branding on the upper, save a small Swoosh near the toe. Its synthetic upper and prominent carbon plate gave the shoe a decidedly futuristic look—one that many sneaker designers still strive to achieve.</p>
-                        <button class="btn-home">Go to Collecttion</button>
+                        <a href="../main/shop.php" class="btn-home">Mua ngay</a>
                     </div>
                     <div class="hero__img">
                         <img src="../images/Nike-Shoes-PNG-File.png" alt="product image">
